@@ -11,7 +11,7 @@ app.use(cors(
   {
     origin: ["https://at-project-front.vercel.app"],
     methods: ["POST", "GET"],
-    credentials: true,
+    credentials: true
   }
 ));
 app.use(express.json());
@@ -36,9 +36,9 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://at-project-front.vercel.app",
+    origin: ["https://at-project-front.vercel.app"],
     methods: ["POST", "GET"],
-    credentials: true,
+    credentials: true
   },
 });
 
