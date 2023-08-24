@@ -30,7 +30,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://at-project.vercel.app",
+    origin: "https://at-project-front.vercel.app/login",
     methods: ["POST", "GET"],
     credentials: true,
   },
